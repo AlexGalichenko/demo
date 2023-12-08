@@ -13,7 +13,7 @@ module.exports = {
                 page: 5000
             },
             capabilities: {
-                browserName: 'chromium'
+                browserName: 'webkit'
             }
         },
         formatOptions: {
@@ -29,7 +29,7 @@ module.exports = {
         ],
         memory: new Memory(),
         pageObject: new App(),
-        parallel: 1,
+        parallel: 4,
         defaultTimeout: 25000
     }
 }

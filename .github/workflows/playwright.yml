@@ -14,6 +14,9 @@ jobs:
       - name: install modules
         working-directory: ./web-playwright
         run: npm ci
+      - name: install playwright
+        working-directory: ./web-playwright
+        run: npx playwright install --with-deps
       - name: execute tests
         working-directory: ./web-playwright
         run: npm run test
